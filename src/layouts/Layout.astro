@@ -1,35 +1,28 @@
 ---
 interface Props {
-	title: string;
+  title: string;
+  description?: string;
+  keywords?: string;
 }
 
-const { title } = Astro.props;
+const { title, description, keywords } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body class="bg-">
-		<slot />
-	</body>
+<html lang="es" class="bg-black font-Poppins">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="./src/fonts/fonts.css" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="author" content="Alvaro Pedrozo" />
+    <title>{title}</title>
+  </head>
+  <body>
+      <slot />
+  </body>
 </html>
-<style is:global>
-	:root {
-		--black :#161616;
-  	--white: #fff;
-  	--css: #13A1DF;
-  	--js: #F7E018;
-  	--html: #FC490B;
-	}
-	html {
-		background-color: var(--black);
-		font-family: 'Poppins';
-	}
-</style>

@@ -1,0 +1,32 @@
+<header
+  class="flex top-0 sticky p-8 justify-between items-center z-50 bg-black animate-change-header"
+>
+  <img
+    src="/favicon.svg"
+    alt="JavaScript Logo"
+    class="w-16 transition duration-[400ms] ease-in-out hover:-rotate-12"
+    alt="JavaScript Imagen"
+  />
+  <h1 class="text-white font-semibold text-2xl">
+    Proyectos vanilla hechos en <strong class="text-html font-semibold"
+      >HTML</strong
+    >,
+    <strong class="text-css font-semibold">CSS</strong> y <strong
+      class="text-js font-semibold">JavaScript</strong
+    >
+  </h1>
+</header>
+
+<style>
+  header {
+    animation: change-header auto linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 200px;
+  }
+
+  @keyframes change-header {
+    to {
+      background-color: #16161666;
+    }
+  }
+</style>

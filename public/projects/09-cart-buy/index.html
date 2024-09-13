@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/fonts/fonts.css" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="main.js"></script>
+    <title>Cart buy</title>
+  </head>
+<body>
+    <main class="main">
+      <section class="section-products">
+        <h1 class="title">Desserts</h1>
+        <div class="products" id="products"></div>
+      </section>
+      <section class="cart">
+        <h2 class="cart-title">
+          You Cart (<span id="products-selected">0x</span>)
+        </h2>
+        <div>
+          <div class="cart-products-container">
+            <div id="cart-products"></div>
+          </div>
+          <div>
+            <div class="order-total">
+              <span>Order total</span>
+              <span class="total-price" id="total-price">$0</span>
+            </div>
+            <button
+              type="button"
+              class="confirm-order-btn"
+              popovertarget="confirmation-order"
+              popovertargetaction="show"
+              id="confirm-order"
+            >
+              Confirm Order
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="confirmation-order" popover="manual" class="confirmation-order">
+        <div class="confirmation-content">
+          <img
+            src="assets/images/icon-order-confirmed.svg"
+            alt="order-confirmed"
+            class="order-confirmed-img"
+          />
+          <h2 class="order-confirmed-title">Order Confirmed</h2>
+          <span class="order-confirmed-msg">We hope you enjoy your food!</span>
+          <div id="confirmation-products" class="confirmation-products"></div>
+          <div class="confirmation-total">
+            <span>Order Total</span>
+            <span class="confirmation-total-price" id="total-confirm-order">$0</span>
+          </div>
+        </div>
+        <button type="button" popovertarget="confirmation-order" popovertargetaction="hide" class="new-order-btn" onclick="location.reload()">Start New Order</button>
+      </section>
+    </main>
+</body>
+</html>

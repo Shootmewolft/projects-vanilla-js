@@ -1,0 +1,50 @@
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: grid;
+  min-height: 100dvh;
+  place-content: center;
+  font-family: Cambria;
+}
+
+.card{
+  display: grid;
+  gap: 2rem;
+  background-color: #121212;
+  color: #fff;
+  padding: 4rem;
+  border-radius: 25px;
+  box-shadow: 0 0 8px #0008;
+
+  .card__parameter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    .card-title--red{
+      color: #ff0000;
+    }
+
+    .card-title--green{
+      color: #008000;
+    }
+
+    .card-title--blue{
+      color: #0000ff;
+    }
+
+    & input{
+      background-color: red;
+    }
+
+    & span{
+      font-size: 1.3em;
+      font-weight: 700;
+    }
+  }
+}

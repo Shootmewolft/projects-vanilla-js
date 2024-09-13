@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+--background: hsl(235, 21%, 11%);
+--text-color: #BABAAE;
+--text-color-filter: #777A92;
+--text-color-filter-blue: #3A7BFD;
+--todo-color: #25273C;
+--white-others: #fff;
+}
+
+*, *::after, *::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Josefin Sans';
+  font-weight: 400;
+  background-color: var(--background);
+  color: var(--text-color);
+}
+
+img{
+  max-width: 100%;
+}
+
+.todo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .todo__bg{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    
+    img{
+      width: 100%;
+    }
+  }
+
+  .todo__container{
+    display: flex;
+    margin-top: 7rem;
+    width: 35%;
+    flex-direction: column;
+    gap: 1.7rem;
+
+    .todo__header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: .7rem;
+    }
+
+    .todo__header h1{
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-size: 2.5em;
+      color: var(--white-others);
+    }
+
+    .todo__header img{
+      cursor: pointer;
+    }
+
+    .todo__form{
+      display: flex;
+      padding: 1rem;
+      align-items: center;
+      background-color: var(--todo-color);
+      gap: .5rem;
+      position: relative;
+      border-radius: 8px;
+    }
+
+    .todo__check-circle{
+      width: 25px;
+      height: 25px;
+      background-color: var(--todo-color);
+      border-radius: 50%;
+      border: 2px solid var(--text-color-filter);
+      position: relative;
+      cursor: pointer;
+    }
+
+    .todo__check-circle:hover::before{
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: -2px;
+      left: -2px;
+      border-radius: 50%;
+      background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    }
+
+    .todo__check-circle:hover::after{
+      content: '';
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      top: 0;
+      left: 1px;
+      border-radius: 50%;
+      background: var(--todo-color);
+    }
+
+    .todo__check-active{
+      background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+      border: none;
+    }
+
+    .todo__check-active:hover::after, .todo__check-active:hover::before{
+      display: none;
+    }
+
+    .task-completed{
+      color: var(--text-color-filter);
+      text-decoration: line-through;
+    }
+    
+    .todo__form input{
+      background-color: transparent;
+      font-family: 'Josefin Sans';
+      border: none;
+      font-size: 1em;
+      flex: 1 0;
+      color: var(--text-color);
+    }
+
+    .todo__form input:focus{
+      outline: none;
+    }
+
+    .todo__form button{
+      border: none;
+      font-size: 1.7em;
+      font-weight: 700;
+      color: var(--white-others);
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    .todo__tasks{
+      display: flex;
+      flex-direction: column;
+      border-radius: 8px 8px 0 0;
+      background-color: var(--todo-color);
+    }
+
+    .todo__task{
+      display: flex;
+      padding: 1.2rem;
+      gap: .5rem;
+      align-items: center;
+      border-bottom: 1.5px solid #babaae2d;
+    }
+
+    .todo__task p{
+      flex: 1 0;
+    }
+
+    .todo__btn-delete{
+      background-color: transparent;
+      border: none;
+      color: var(--text-color);
+      font-weight: 700;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    .todo__footer{
+      display: flex;
+      background-color: var(--todo-color);
+      padding: 1.2rem;
+      align-items: center;
+      border-radius: 0 0 8px 8px;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .todo__footer p{
+      font-size: .9em;
+      color: var(--text-color-filter);
+    }
+
+    .todo__filters{
+      display: flex;
+      flex: 1 0;
+      justify-content: center;
+      gap: .7rem;
+    }
+
+
+    .todo__footer button{
+      background-color: transparent;
+      border: none;
+      font-family: 'Josefin Sans';
+      font-size: .9em;
+      color: var(--text-color-filter);
+      cursor: pointer;
+    }
+
+    .todo__footer button:hover{
+      color: var(--text-color);
+    }
+    
+    .todo__filters button{
+      font-weight: 700;
+    }
+
+    .todo__filters button:hover{
+      color: var(--white-others);
+    }
+  }
+
+  @media (width<=1024px) {
+    .todo__container{
+      width: 50%;
+    }
+  }
+
+  @media (width<=500px) {
+    .todo__container{
+      width: 90%;
+    }
+  }
+}

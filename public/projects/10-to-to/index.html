@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="main.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do</title>
+</head>
+<body>
+  <main class="todo">
+    <picture class="todo__bg">
+      <source srcset="assets/bg-mobile-dark.jpg" media="(width<=660px)">
+      <img src="assets/bg-desktop-dark.jpg">
+    </picture>
+
+    <article class="todo__container">
+      <header class="todo__header">
+        <h1>todo</h1>
+        <img src="assets/icon-sun.svg">
+      </header>
+      <form method="post" class="todo__form">
+        <span class="todo__check-circle"></span>
+        <input type="text" placeholder="Create a new todo..." maxlength="50" class="todo__input">
+        <button type="button" class="todo__btn-add">+</button>
+      </form>
+      <div>
+      <div class="todo__tasks">
+      </div>
+      <footer class="todo__footer">
+        <div class="todo__filters">
+          <button class="todo__filter-btn">All</button>
+          <button class="todo__filter-btn">Active</button>
+          <button class="todo__filter-btn">Completed</button>
+        </div>
+        <button class="todo__btn-clear">Clear Completed</button>
+      </footer>
+    </div>
+    </article>
+  </main>
+</body>
+</html>
