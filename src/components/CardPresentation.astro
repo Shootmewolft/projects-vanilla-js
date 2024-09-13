@@ -1,26 +1,42 @@
-<section class="flex items-center justify-evenly">
-  <div class="grid w-[60%] gap-4">
-    <p class="text-lg">
-      ¡Hola, soy
-      <a href="https://github.com/shootmewolft" class="text-[#ccc] cursor-pointer font-medium hover:underline" target="_blank"
-        >Alvaro Pedrozo</a
-      >! Desarrollador Front-End en etapa de aprendizaje y crecimiento.
-    </p>
-    <div class="flex gap-4 w-full">
-      <a href="https://github.com/shootmewolft" target="_blank" class="flex py-2 px-4 text-white rounded-xl items-center bg-[#fff3] gap-2 border border-white hover:bg-[#fff6]">
-        <img src="/github.svg" alt="GitHub logo" class="w-8 rounded-2xl"/>Alvaro's GitHub</a
-      >
-      <a
-        href="https://www.linkedin.com/in/alvaro-pedrozo-b8600423b/"
-        target="_blank" class="flex py-2 px-4 text-white rounded-xl items-center bg-[#fff3] gap-2 border border-white hover:bg-[#fff6]"
-      >
-        <img src="/linkedin.svg" alt="Linkedin logo" class="w-8 rounded-2xl"/> Alvaro's Linkedin</a
-      >
+---
+import BtnCardPresentation from "./Button.astro";
+---
+
+<section class="w-full max-w-7xl mx-auto">
+  <div class="w-full max-w-3xl mx-auto flex flex-col gap-4 sm:flex-row">
+    <div
+      class="w-full flex items-center justify-center sm:order-2"
+    >
+      <img
+        class="w-40 aspect-square rounded-2xl block object-cover"
+        src="https://cdn.jsdelivr.net/gh/alohe/avatars/png/upstream_17.png"
+        alt="Imagen del rostro de Shoot"
+      />
+    </div>
+
+    <div class="w-full flex flex-col gap-4 sm:order-1">
+      <p class="text-lg">
+        ¡Hola, soy
+        <a
+          href="https://github.com/shootmewolft"
+          class="text-[#f1f1f1] cursor-pointer font-semibold hover:underline"
+          target="_blank">Alvaro Pedrozo</a
+        >. Desarrollador Front-End en etapa de aprendizaje y crecimiento.
+      </p>
+
+      <div class="w-full grid grid-cols-2 gap-4">
+        <BtnCardPresentation
+          src="/github.svg"
+          href="https://github.com/shootmewolft"
+          title="GitHub"
+        />
+
+        <BtnCardPresentation
+          src="/linkedin.svg"
+          href="https://www.linkedin.com/in/alvaro-pedrozo-b8600423b/"
+          title="Linkedin"
+        />
+      </div>
     </div>
   </div>
-  <img
-    class="w-40 rounded-2xl"
-    src="https://cdn.jsdelivr.net/gh/alohe/avatars/png/upstream_17.png"
-    alt="Imagen del rostro de Shoot"
-  />
 </section>
