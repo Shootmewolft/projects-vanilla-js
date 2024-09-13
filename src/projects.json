@@ -2,70 +2,70 @@
   {
     "name": "Tarjetas expandibles",
     "description": "Muestra al usuario, de una forma innovadora, lugares para visitar.",
-    "github": "https://github.com/Shootmewolft/projects-vanilla-html-css-js/tree/main/01-expanding-card",
+    "github": "https://github.com/Shootmewolft/projects-vanilla-js/tree/main/public/projects/01-expandable-cards",
     "image": "/projects/01-expandable-cards/design.png",
     "slug": "01-expandable-cards"
   },
   {
     "name": "Paso a paso",
     "description": "Un paso a paso funcional para una pasarela de pago.",
-    "github": "https://github.com/Shootmewolft/projects-vanilla-html-css-js/tree/main/02-progress-steps",
+    "github": "https://github.com/Shootmewolft/projects-vanilla-js/tree/main/public/projects/02-profress-steps",
     "image": "/projects/02-progress-steps/design.png",
     "slug": "02-progress-steps"
   },
   {
     "name": "Un generador de colores hexadecimales",
     "description": "Genera un código hexadecimal aleatorio.",
-    "github": "https://github.com/Shootmewolft/projects-vanilla-html-css-js/tree/main/03-changeColorHexadecimal",
+    "github": "https://github.com/Shootmewolft/projects-vanilla-js/tree/main/public/projects/03-changeColorHexadecimal",
     "image": "/projects/03-changeColorHexadecimal/design.png",
     "slug": "03-changeColorHexadecimal"
   },
   {
     "name": "Generador de citas motivacionales",
     "description": "Muestra una cita aleatoria de un autor reconocido.",
-    "github": "https://github.com/Shootmewolft/projects-vanilla-html-css-js/tree/main/04-citasmotivational-quotes",
+    "github": "https://github.com/Shootmewolft/projects-vanilla-js/tree/main/public/projects/04-citasmotivational-quotes",
     "image": "/projects/04-citasmotivational-quotes/design.png",
     "slug": "04-citasmotivational-quotes"
   },
   {
     "name": "Generador de código rgb",
     "description": "Brinda al usuario la posibilidad de crear un color rgb.",
-    "github": "https://github.com/Shootmewolft/projects-vanilla-html-css-js/tree/main/05-color-rgb",
+    "github": "https://github.com/Shootmewolft/projects-vanilla-js/tree/main/public/projects/05-color-rgb",
     "image": "/projects/05-color-rgb/design.png",
     "slug": "05-color-rgb"
   },
   {
     "name": "Eventos del teclado",
     "description": "Atrapa la tecla que es presionada por el usuario.",
-    "github": "https://github.com/Shootmewolft/projects-vanilla-html-css-js/tree/main/06-event-keycodes",
+    "github": "https://github.com/Shootmewolft/projects-vanilla-js/tree/main/public/projects/06-event-keycodes",
     "image": "/projects/06-event-keycodes/design.png",
     "slug": "06-event-keycodes"
   },
   {
     "name": "GitHub profiles API",
     "description": "Obtiene, mediante la API de GitHub, la información del usuario ingresado.",
-    "github": "https://github.com/Shootmewolft/projects-vanilla-html-css-js/tree/main/07-github-profile-api",
+    "github": "https://github.com/Shootmewolft/projects-vanilla-js/tree/main/public/projects/07-github-profile-api",
     "image": "/projects/07-github-profile-api/design.png",
     "slug": "07-github-profile-api"
   },
   {
     "name": "Calculadora",
     "description": "Una calculadora, especialmente pensada para móviles.",
-    "github": "https://github.com/Shootmewolft/projects-vanilla-html-css-js/tree/main/08-calculator",
+    "github": "https://github.com/Shootmewolft/projects-vanilla-js/tree/main/public/projects/08-calculator",
     "image": "/projects/08-calculator/design.png",
     "slug": "08-calculator"
   },
   {
     "name": "Carrito de compras",
     "description": "Funcionalidad de un carrito de compras.",
-    "github": "https://github.com/Shootmewolft/projects-vanilla-html-css-js/tree/main/09-cart-buy",
+    "github": "https://github.com/Shootmewolft/projects-vanilla-js/tree/main/public/projects/09-cart-buy",
     "image": "/projects/09-cart-buy/design.png",
     "slug": "09-cart-buy"
   },
   {
     "name": "To-Do",
     "description": "Herramienta para recordar tareas.",
-    "github": "https://github.com/Shootmewolft/projects-vanilla-html-css-js/tree/main/10-to-to",
+    "github": "https://github.com/Shootmewolft/projects-vanilla-js/tree/main/public/projects/10-to-to",
     "image": "/projects/10-to-to/design.png",
     "slug": "10-to-to"
   }
