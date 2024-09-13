@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Tarjetas expandibles",
     "description": "Muestra al usuario, de una forma innovadora, lugares para visitar.",
     "github": "https://github.com/Shootmewolft/projects-vanilla-js/tree/main/public/projects/01-expandable-cards",
@@ -7,6 +8,7 @@
     "slug": "01-expandable-cards"
   },
   {
+    "id": 2,
     "name": "Paso a paso",
     "description": "Un paso a paso funcional para una pasarela de pago.",
     "github": "https://github.com/Shootmewolft/projects-vanilla-js/tree/main/public/projects/02-profress-steps",
@@ -14,6 +16,7 @@
     "slug": "02-progress-steps"
   },
   {
+    "id": 3,
     "name": "Un generador de colores hexadecimales",
     "description": "Genera un código hexadecimal aleatorio.",
     "github": "https://github.com/Shootmewolft/projects-vanilla-js/tree/main/public/projects/03-changeColorHexadecimal",
@@ -21,6 +24,7 @@
     "slug": "03-changeColorHexadecimal"
   },
   {
+    "id": 4,
     "name": "Generador de citas motivacionales",
     "description": "Muestra una cita aleatoria de un autor reconocido.",
     "github": "https://github.com/Shootmewolft/projects-vanilla-js/tree/main/public/projects/04-citasmotivational-quotes",
@@ -28,6 +32,7 @@
     "slug": "04-citasmotivational-quotes"
   },
   {
+    "id": 5,
     "name": "Generador de código rgb",
     "description": "Brinda al usuario la posibilidad de crear un color rgb.",
     "github": "https://github.com/Shootmewolft/projects-vanilla-js/tree/main/public/projects/05-color-rgb",
@@ -35,6 +40,7 @@
     "slug": "05-color-rgb"
   },
   {
+    "id": 6,
     "name": "Eventos del teclado",
     "description": "Atrapa la tecla que es presionada por el usuario.",
     "github": "https://github.com/Shootmewolft/projects-vanilla-js/tree/main/public/projects/06-event-keycodes",
@@ -42,6 +48,7 @@
     "slug": "06-event-keycodes"
   },
   {
+    "id": 7,
     "name": "GitHub profiles API",
     "description": "Obtiene, mediante la API de GitHub, la información del usuario ingresado.",
     "github": "https://github.com/Shootmewolft/projects-vanilla-js/tree/main/public/projects/07-github-profile-api",
@@ -49,6 +56,7 @@
     "slug": "07-github-profile-api"
   },
   {
+    "id": 8,
     "name": "Calculadora",
     "description": "Una calculadora, especialmente pensada para móviles.",
     "github": "https://github.com/Shootmewolft/projects-vanilla-js/tree/main/public/projects/08-calculator",
@@ -56,6 +64,7 @@
     "slug": "08-calculator"
   },
   {
+    "id": 9,
     "name": "Carrito de compras",
     "description": "Funcionalidad de un carrito de compras.",
     "github": "https://github.com/Shootmewolft/projects-vanilla-js/tree/main/public/projects/09-cart-buy",
@@ -63,6 +72,7 @@
     "slug": "09-cart-buy"
   },
   {
+    "id": 10,
     "name": "To-Do",
     "description": "Herramienta para recordar tareas.",
     "github": "https://github.com/Shootmewolft/projects-vanilla-js/tree/main/public/projects/10-to-to",
