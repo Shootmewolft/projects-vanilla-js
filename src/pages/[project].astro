@@ -4,12 +4,12 @@ import { getNamesProjects } from '@/utils/projectsNames.ts'
 
 export function getStaticPaths(){  
   const namesProjects = getNamesProjects()
-  return namesProjects.map((name, index) => ({
-      params: {project: name, number: index}
+  return namesProjects.map((name) => ({
+      params: {project: name}
     }))
 }
 
-const { project, number } = Astro.params
+const { project } = Astro.params
 ---
 
 <Layout title={ project }>
