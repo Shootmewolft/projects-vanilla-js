@@ -10,9 +10,6 @@ export default {
       js: "#F7E018",
       html: "#FC490B",
     },
-    fontFamily: {
-      Poppins: ["Poppins"],
-    },
   },
   plugins: [],
 };
