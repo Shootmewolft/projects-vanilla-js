@@ -1,5 +1,6 @@
 ---
 import Layout from "@/layouts/Layout.astro"
+import Button from "@/components/Button.astro"
 import { getNamesProjects } from '@/utils/projectsNames.ts'
 
 export function getStaticPaths(){  
@@ -14,4 +15,5 @@ const { project } = Astro.params
 
 <Layout title={ project }>
   <iframe title={`${project}`}class="w-screen h-dvh" src={`/projects/${project}/index.html`}></iframe>
+  <Button href="/" src="/back.svg" title="Volver" _class="absolute bottom-4 left-4 bg-[#1f1f1f]"/>
 </Layout>

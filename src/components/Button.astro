@@ -1,12 +1,18 @@
 ---
-const { href, src, title } = Astro.props;
+interface Props {
+  href: string;
+  src: string;
+  title: string;
+  _class?: string;
+}
+
+const { href, src, title, _class } = Astro.props;
 ---
 
 <a
   href={href}
   #323232
-  target="_blank"
-  class="flex items-center justify-start gap-3 rounded-xl p-4 border border-white/10 hover:bg-[#1f1f1f] hover:border-white/30 transition-colors duration-150"
+  class=`flex items-center justify-start gap-3 rounded-xl p-4 border border-white/10 hover:bg-[#1f1f1f] hover:border-white/30 transition-colors duration-150 ${_class}`
 >
   <div class="w-9 h-9">
     <img src={src} alt={title} class="w-full h-full block rounded-2xl" />

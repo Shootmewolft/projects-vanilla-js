@@ -1,5 +1,16 @@
 ---
 import Button from "./Button.astro";
+interface Props{
+  project: {
+    id: string;
+    name: string;
+    description: string;
+    image: string;
+    github: string;
+    slug: string;
+  };
+}
+
 const { project } = Astro.props;
 ---
 
