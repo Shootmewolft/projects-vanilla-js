@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <script type="module" src="main.js"></script>
+    <title>Algoritmo BFS</title>
+  </head>
+  <body>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    ></script>
+    <script
+    src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"
+    ></script>
+    <main class="bfs">
+      <section class="bfs__container">
+        <picture class="bfs__bg">
+          <source
+            srcset="assets/pattern-bg-mobile.png"
+            media="(width<=375px)"
+          />
+          <img src="assets/pattern-bg-desktop.png" alt="bg" />
+        </picture>
+        <h1 class="bfs__title">Algoritmo BFS - [Barranquilla, Galapa, Santo Tomas, Baranoa, Puerto Colombia, Sabanagrande, Palmar, Soledad]</h1>
+        <form action="" method="post" class="bfs__form">
+          <div class="bfs__form-inputs">
+            <input
+              type="text"
+              placeholder="Ingrese la ciudad origen.."
+              id="city-input"
+              name="city-origin"
+            />
+            <input
+              type="text"
+              placeholder="Ingrese la ciudad destino.."
+              id="city-input"
+              name="city-destiny"
+            />
+          </div>
+          <input type="submit" value="Calcular la ruta" />
+        </form>
+        <div class="bfs__data-general">
+          <div class="bfs__data-bfs">
+            <p id="route-title">La mejor ruta es:</p>
+            <span id="route"></span>
+          </div>
+        </div>
+      </section>
+      <div id="init-map"></div>
+      <div id="map"></div>
+    </main>
+  </body>
+</html>

@@ -78,5 +78,13 @@
     "github": "https://github.com/Shootmewolft/projects-vanilla-js/tree/main/public/projects/10-to-to",
     "image": "/projects/10-to-to/design.png",
     "slug": "10-to-to"
+  },
+  {
+    "id": 11,
+    "name": "Rutas de viaje",
+    "description": "Herramienta que traza una ruta.",
+    "github": "https://github.com/Shootmewolft/projects-vanilla-js/tree/main/public/projects/11-route-map",
+    "image": "/projects/11-route-map/design.png",
+    "slug": "11-route-map"
   }
 ]

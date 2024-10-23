@@ -1,0 +1,189 @@
+:root {
+  --Very-dark-gray: hsl(0, 0%, 17%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --white: #fff;
+  --black: #000;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.bfs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .bfs__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: "Rubik";
+    color: var(--white);
+    width: 100%;
+    padding-top: 2rem;
+    position: relative;
+    height: 238px;
+
+    .bfs__bg {
+      position: absolute;
+      z-index: -1;
+      height: 100%;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+
+    .bfs__title {
+      font-size: 1.2em;
+      padding-inline: 1rem;
+      font-weight: 500;
+    }
+
+    .bfs__form {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      align-items: center;
+      gap: 1rem;
+      z-index: 9999;
+    }
+
+    .bfs__form-inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      width: 50%;
+    }
+
+    .bfs__form input {
+      padding: 1rem 0;
+      border: none;
+      font-size: 1.1rem;
+    }
+
+    .bfs__form input[type="text"] {
+      width: 100%;
+      border-radius: 10px;
+      color: var(--Very-dark-gray);
+      padding-left: 1.5rem;
+      font-family: "Rubik";
+      font-weight: 400;
+      cursor: pointer;
+    }
+
+    .bfs__form input[type="text"]:focus {
+      outline: none;
+    }
+
+    .bfs__form input[type="text"]::placeholder {
+      color: var(--dark-gray);
+    }
+
+    .bfs__form input[type="submit"] {
+      padding: 1rem 1.5rem;
+      background-color: var(--black);
+      color: var(--white);
+      font-family: "Rubik";
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .bfs__form input[type="submit"]:hover {
+      opacity: 0.8;
+    }
+
+    .bfs__data-general {
+      display: none;
+      background-color: var(--white);
+      user-select: none;
+      width: fit-content;
+      justify-content: center;
+      padding: 1.5rem 1rem;
+      box-shadow: 0 0 10px #0003;
+      border-radius: 15px;
+      z-index: 99999;
+    }
+
+    .bfs__data-bfs {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .bfs__data-bfs p {
+      color: var(--dark-gray);
+      text-transform: uppercase;
+      font-size: 0.8em;
+      font-weight: 700;
+      letter-spacing: 2px;
+      display: none;
+    }
+
+    .bfs__data-bfs span {
+      color: var(--black);
+      font-size: 1.4em;
+      font-weight: 500;
+    }
+  }
+
+  /* MAP STYLES */
+
+  #map {
+    width: 100%;
+    height: calc(100dvh - 238px);
+  }
+
+  .leaflet-routing-container {
+    display: none;
+  }
+
+  @media (width<=535px) {
+    .bfs__container {
+      gap: 1rem;
+    }
+
+    .bfs__form input[type="text"] {
+      width: 100%;
+      font-size: 0.8em;
+    }
+
+    .bfs__data-general {
+      margin-top: 0;
+      width: 90%;
+      padding: 1rem;
+    }
+
+    .bfs__data-bfs span {
+      font-size: 1.1em;
+    }
+
+    .bfs__data-bfs p {
+      font-size: 0.8em;
+    }
+
+    .bfs__data-bfs span {
+      font-size: 1em !important;
+    }
+
+    .bfs__form {
+      flex-direction: column;
+    }
+
+    .bfs__form input[type="submit"] {
+      font-size: 0.8em !important;
+      padding: .8rem !important;
+    }
+  }
+}
